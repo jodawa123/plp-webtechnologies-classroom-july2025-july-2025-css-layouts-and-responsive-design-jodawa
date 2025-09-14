@@ -1,0 +1,125 @@
+/* ===== Base Styles ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+header, nav, footer {
+    text-align: center;
+    padding: 1rem;
+    background: #4caf50;
+    color: white;
+}
+
+h1, h2 {
+    margin: 0.5rem 0;
+}
+
+/* ===== Navigation with Flexbox ===== */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ===== Grid Layout for Main Content ===== */
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.sidebar {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.content {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* ===== Table Styling ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+table img {
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+thead {
+    background: #ddd;
+}
+
+/* ===== Form Styling ===== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+fieldset {
+    border: 2px solid #4CAF50;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #f1f8e9;
+}
+label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+}
+input, select, button {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.6rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}

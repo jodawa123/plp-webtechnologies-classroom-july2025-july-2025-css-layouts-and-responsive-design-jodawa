@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description">
+    <title>Eat Health, Live Healthy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Healthy Living Guide</h1>
+        <p>Your simple guide to eating well, staying active, and staying healthy.</p>
+    </header>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#habits">Habits</a></li>
+            <li><a href="#nutrition">Nutrition</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#form">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <main class="grid-layout">
+
+        <!-- Sidebar (could contain quick tips) -->
+        <aside class="sidebar">
+            <h2>Quick Tips</h2>
+            <ul>
+                <li>Sleep 7–8 hrs daily</li>
+                <li>Practice mindfulness</li>
+                <li>Take regular breaks</li>
+            </ul>
+        </aside>
+
+        <!-- Main content area -->
+        <section class="content">
+
+            <!-- Example List -->
+            <section id="habits">
+                <h2>Top 3 Healthy Habits</h2>
+                <ol>
+                    <li>Eat more fruits and vegetables</li>
+                    <li>Exercise for at least 30 minutes a day</li>
+                    <li>Drink plenty of water</li>
+                </ol>
+            </section>
+
+            <!-- Example Table -->
+            <section id="nutrition">
+            <h2>Daily Nutrition Table</h2>
+            <table>
+                <caption>Recommended Daily Intake</caption>
+                <thead>
+                    <tr>
+                        <th>Food Group</th>
+                        <th>Serving Size</th>
+                        <th>Examples</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fruits</td>
+                        <td>2 servings</td>
+                        <td>Apples, Bananas, Berries</td>
+                        <td><img src="fruits.jpeg" alt="Fruits" width="80"></td>
+                    </tr>
+                    <tr>
+                        <td>Vegetables</td>
+                        <td>3 servings</td>
+                        <td>Spinach, Carrots, Broccoli</td>
+                        <td><img src="veggies.jpeg" alt="Vegetables" width="80"></td>
+                    </tr>
+                    <tr>
+                        <td>Protein</td>
+                        <td>2 servings</td>
+                        <td>Beans, Eggs, Chicken</td>
+                        <td><img src="protein.jpeg" alt="Protein foods" width="80"></td>
+                    </tr>
+                </tbody>
+            </table>
+            </section>
+
+
+            <!-- Example Media -->
+            <section id="media">
+                <h2>Quick Motivation</h2>
+                <video controls width="100%" mute autoplay loop>
+                    <source src="healthy_eats.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <!-- Form -->
+            <section id="form">
+                <h2>Sign Up for Healthy Living Tips</h2>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required autocomplete="email">
+
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" min="1" max="120" required>
+
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Min 6 characters" required minlength="6">
+
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Preferences</legend>
+                        <label><input type="checkbox" name="updates" checked> Send me weekly health tips</label>
+
+                        <label for="goal">Your Health Goal:</label>
+                        <select id="goal" name="goal" required>
+                            <option value="">--Select a Goal--</option>
+                            <option value="weight-loss">Lose Weight</option>
+                            <option value="fitness">Get Fitter</option>
+                            <option value="nutrition">Eat Better</option>
+                        </select>
+
+                        <p>Preferred Contact Method:</p>
+                        <label><input type="radio" name="contact" value="email" required>Email</label>
+                        <label><input type="radio" name="contact" value="phone">Phone</label>
+                        <label><input type="radio" name="contact" value="none">None</label>
+                    </fieldset>
+
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </section>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Healthy Living Guide</p>
+    </footer>
+
+</body>
+</html>
